@@ -222,6 +222,7 @@ a:hover{
     .header-mobile{
         display: block;
         height: 100vh;
+        background: #eeeeee;
     }
 
     .header-mobile-1{
@@ -261,7 +262,7 @@ a:hover{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 50%;
+        height: 45%;
         background: #eeeeee;
     }
 
