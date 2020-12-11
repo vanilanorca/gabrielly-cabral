@@ -157,8 +157,8 @@
     animation-fill-mode: backwards;
 }
 @keyframes insta {
-    0% {transform: translateX(1000px);};
-    100% {transform: translateX();}
+    0% {transform: translateX(1000px); opacity: 0};
+    100% {transform: translateX(); opacity: 1}
 }
 
 .content-2 .container i{
@@ -188,9 +188,8 @@
     animation-fill-mode: backwards;
 }
 @keyframes contato {
-    0% {transform: translateX(-1000px);};
-    100% {transform: translateX();}
-}
+    0% {transform: translateX(-1000px); opacity: 0};
+    100% {transform: translateX(); opacity: 1}}
 
 .content-3 .container i{
     font-size: 40px;
