@@ -222,6 +222,12 @@
 footer{
     height: 42px;
     background: #793D3E;
+    color: white;
+    font-family: 'Questrial', sans-serif!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px!important;
 }
 
 a{
