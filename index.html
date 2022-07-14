@@ -5,112 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabrielly Cabral</title>
     <meta name="author" content="V.L.A">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="reset.css">
-
-    <!--google font-->
-    <!-- font-family: 'Great Vibes', cursive; gabrielly
-         font-family: 'Questrial', sans-serif; te ajudo a -->
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/reset.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-
-    <!--icons-->
-    <script src="https://kit.fontawesome.com/bb176450ad.js" crossorigin="anonymous"></script>
 
     <!--js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!--favicon-->
-    <link rel="icon" type="image/png" sizes="96x96" href="imagens/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+
+    
 
 </head>
 <body onload="browserVerify()">
-    <div id="loading" style="display:inline">
-        <div>
-            <img src="imagens/loading-gif.gif" alt="">
+    <div id="loading" style="display: inline;">
+        <div class="bloco">
+            <div class="img-circle">
+                <img src="assets/images/loading.gif" alt="Carregando">
+            </div>
             <span>Carregando...</span>
         </div>
     </div>
 
     <div id="conteudo" style="display: none;">
-        <div id="main-site">
-            <div class="header-desktop">
-                <div class="header-container">
-                    <img src="imagens/logo.png" alt="" class="logo">
-                    <h1>Gabrielly Cabral</h1>
+        <div class="header-container">
+            <div class="header">
+                <div class="main-header">
+                    <img src="assets/images/logo.png" alt="Gabrielly Cabral">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#areas-de-atuacao">Áreas de atuação</a>
+                            </li>
+                            <li>
+                                <a href="#formacao-academica">
+                                Formação Acadêmica</a>
+                            </li>
+                            <li>
+                                <a href="#contato">
+                                Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-        
-                <img src="imagens/perfil-2.jpg" alt="" class="foto-perfil">
-            </div>
-        
-            <div class="header-mobile">
-                <div class="header-mobile-1">
-                    <img src="imagens/perfil-2.jpg" alt="" class="foto-perfil">
-                    <h1>Gabrielly Cabral</h1>
-                </div>
-        
-                <div class="header-mobile-2">
-                    <img src="imagens/logo.png" alt="" class="logo">
-                    <a href="#logo" class="scroll-page"><i class="fas fa-arrow-circle-down"></i></a>
-                </div>
-            </div>
-        
-            <div class="only-mobile-logo" id="logo">
-                <img src="imagens/logo.png" alt="">
-            </div>
-        
-            <div class="content-1">
-                <p class="sobre">Te ajudo a resolver os conflitos e entender o direito de uma forma simples e descomplicada</p>
-        
-                <div class="content-1-1">
-                    <div class="area-formacao bloco-1">
-                        <h2>Área de atuação:</h2>
-        
-                        <h3>Direito Civil</h3>
-                        <h3>Direito de Família</h3>
-                        <h3>Direito do Consumidor</h3>
+    
+                <div class="second-header">
+                    <div class="info">
+                        <h1>Gabrielly Cabral</h1>
+                        <p>Advogada em casos de Direito do Consumidor, voltado para contencioso judicial, casos de Direito de Família, Direito Cível e Contratos.</p>
+                        <p>Recentemente, exploro o mercado de tecnologia voltado para área jurídica, focando no futuro do judiciário.</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/gabriellycaabral_/" target="_blank">
+                                <img src="assets/images/icon-linkedin-1.png" alt="Linkedin">
+                            </a>
+                            <a href="mailto:gabriellycabral.adv@outlook.com" target="_blank">
+                                <img src="assets/images/icon-mail-1.png" alt="Mail">
+                            </a>
+                            <a href="https://www.linkedin.com/in/gabrielly-cabral-1b9722176/" target="_blank">
+                                <img src="assets/images/icon-instagram-1.png" alt="Instagram">
+                            </a>
+                        </div>
                     </div>
-        
-                    <div class="vertical-line"></div>
-        
-                    <div class="area-formacao bloco-2">
-                        <h2>Formação Acadêmica:</h2>
-        
-                        <h3>Bacharela em Direito</h3>
-                        <h3>Pós-Graduada em Processo Civil</h3>
-                        <h3>Pós-Graduada em Direito do Trabalho e Processo do Trabalho</h3>
-                    </div>
+                    <img src="assets/images/perfil.png" alt="" class="perfil" id="tiltable" data-tilt>
                 </div>
             </div>
-        
-            <div class="content-2">
-                <div class="container">
-                    <p>Acompanhe dicas de Direito do Consumidor no Instagram !</p>
-                    <a target="_blank" href="https://www.instagram.com/gabriellycabral.adv/">
-                        <i class="fab fa-instagram" class="icon"></i>
-                    </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="container">
+            <section id="areas-de-atuacao" class="cta hide">
+                <img src="assets/images/martelo.png" alt="Áreas de Atuação">
+                <div class="text-align-right">
+                    <h2>Áreas de atuação</h2>
+                    <ul>
+                        <li>Direito civil</li>
+                        <li>Direito de Família</li>
+                        <li>Direito do Consumidor</li>
+                    </ul>
                 </div>
-            </div>
-        
-            <div class="content-3">
-                <div class="container">
-                    <a href="mailto:gabriellycabral.adv@outlook.com">
-                        <i class="far fa-envelope" class="icon"></i>
-                    </a>
-        
-                    <a target="_blank" href="https://www.linkedin.com/in/gabrielly-cabral-1b9722176/">
-                        <i class="fab fa-linkedin" class="icon"></i>
-                    </a>
-        
+            </section>
+
+            <div class="divider divider2"></div>
+
+            <section id="formacao-academica" class="column-reverse cta hide">
+                <div>
+                    <h2>Formação Acadêmica</h2>
+                    <ul>
+                        <li>Bacharela em Direito</li>
+                        <li>Pós-Graduada em Processo Civil</li>
+                        <li>Pós-Graduada em Direito do Trabalho e <br> Processo do Trabalho</li>
+                    </ul>
                 </div>
+                <img src="assets/images/livro.png" alt="Formação Acadêmica">
+            </section>
+
+            <div class="divider divider2"></div>
+
+            <section class="cta hide" id="facilidade">
+                <img src="assets/images/facilidade.png" alt="Áreas de Atuação">
+                <p class="text-align-right">Te ajudo a resolver os conflitos e entender o direito de uma forma simples e descomplicada</p>
+            </section>
+        </div>
+
+        <footer id="contato">
+            <div>
+                <a href="https://www.instagram.com/gabriellycaabral_/" target="_blank">
+                    <img src="assets/images/icon-linkedin-2.png" alt="Linkedin">
+                </a>
+                <a href="mailto:gabriellycabral.adv@outlook.com" target="_blank">
+                    <img src="assets/images/icon-mail-2.png" alt="Mail">
+                </a>
+                <a href="https://www.linkedin.com/in/gabrielly-cabral-1b9722176/" target="_blank">
+                    <img src="assets/images/icon-instagram-2.png" alt="Instagram">
+                </a>
             </div>
-        
-            <footer>
-                <span>Developed by <a href="https://www.linkedin.com/in/vinicius-lopes-alves/">Vinicius Lopes Alves</a></span>
-            </footer>
+        </footer>
+
+        <div class="developed-by">
+            Designed and Developed by <a href="https://www.linkedin.com/in/vinicius-lopes-alves/" target="_blank">Vinicius Lopes Alves</a>
         </div>
     </div>
+       
 
 
 
@@ -123,18 +142,24 @@
             
 
             <h2 style="margin-top: 50px; text-align: center;">O site não é compatível com este navegador. Indicamos a utilização do
-                <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Google Chrome.</a></h1>
-            
-                <a href="https://www.instagram.com/gabriellycabral.adv/" target="_blank">
-                    <p style="color: black; list-style: none; text-align: center; margin-top: 50px;">
-                        <i class="fab fa-instagram icone" style="margin-right: 20px; font-size: 20px;"></i> @gabriellycabral.adv
-                    </p>
-                </a>
+            <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Google Chrome.</a></h1>
+        
+            <a href="https://www.instagram.com/gabriellycabral.adv/" target="_blank">
+                <p style="color: black; list-style: none; text-align: center; margin-top: 50px;">
+                    <i class="fab fa-instagram icone" style="margin-right: 20px; font-size: 20px;"></i> @gabriellycabral.adv
+                </p>
+            </a>
     </div>
 
 
 
 
     <script src="main.js"></script>
+
+    <!-- TILT -->
+    <script src="tilt.js-master/src/tilt.jquery.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
